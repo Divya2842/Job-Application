@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="reg.css"> 
+    <script src="practice.js" defer></script> 
+</head>
+<body>
+    <div class="form">
+        <h2>Job Application Form</h2>
+        <form onsubmit="return formvalidation()" action="welcome.html">
+            <div class="pd">
+                <h3>Personal Details</h3>
+                <label for="fname">First Name:</label>
+                <input id="fname" type="text" placeholder="First Name" ><br><br>
+                
+                <label for="lname">Last Name:</label>
+                <input id="lname" type="text" placeholder="Last Name"><br><br>
+                
+                <label for="mobile">Mobile number:</label>
+                <input id="mobile" type="tel" placeholder="Mobile number"><br><br>
+                
+                <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="Email"><br><br>
+                
+                <label for="dob">Date of Birth:</label>
+                <input id="dob" type="date"><br><br>
+                
+                <label>Gender:</label><br>
+                <input type="radio" name="gender" id="female" value="Female">
+                <label for="female">Female</label><br>
+                
+                <input type="radio" name="gender" id="male" value="Male">
+                <label for="male">Male</label><br><br>
+            </div>
+            
+            <div class="rd">
+                <h3>Residential Details</h3>
+                
+                <label for="address">Address Line:</label><br>
+                <input id="address" type="text" placeholder="Address"><br><br>
+                
+                <label for="city">City:</label>
+                <input id="city" type="text" placeholder="City"><br><br>
+                
+                <label for="state">State:</label><br>
+                <select id="state">
+                    <option value="">Select your state</option>
+                    <option value="tn">Tamilnadu</option>
+                    <option value="ap">Andhra Pradesh</option>
+                    <option value="ka">Karnataka</option>
+                    <option value="kr">Kerala</option>
+                    <option value="dl">Delhi</option>
+                    <option value="ga">Goa</option>
+                </select><br><br>
+                
+                <label for="zip">ZIP Code:</label>
+                <input id="zip" type="text" placeholder="ZIP Code"><br><br>
+                
+                <label for="country">Country:</label><br>
+                <input id="country" type="text" placeholder="Country"><br><br>
+            </div>
+            
+            <div class="edu">
+                <h3>Educational Details</h3>
+                
+                <label for="university">University:</label>
+                <input id="university" type="text" placeholder="University"><br><br>
+                
+                <label for="degree">Degree:</label>
+                <input id="degree" type="text" placeholder="Degree"><br><br>
+                
+                <label for="major">Major:</label>
+                <input id="major" type="text" placeholder="Major"><br><br>
+                
+                <label for="gradyear">Graduation Year:</label>
+                <input id="gradyear" type="text" placeholder="Graduation Year"><br><br>
+                
+                <label for="cgpa">CGPA:</label>
+                <input id="cgpa" type="text" placeholder="CGPA"><br><br>
+            </div>
+            
+            <div class="exp">
+                <h3>Work Experience</h3>
+                
+                <label for="company">Company:</label>
+                <input id="company" type="text" placeholder="Company"><br><br>
+                
+                <label for="position">Position:</label>
+                <input id="position" type="text" placeholder="Position"><br><br>
+                
+                <label for="startyear">Start Year:</label>
+                <input id="startyear" type="text" placeholder="Start Year"><br><br>
+                
+                <label for="endyear">End Year:</label>
+                <input id="endyear" type="text" placeholder="End Year"><br><br>
+                
+                <label for="responsibilities">Responsibilities:</label><br>
+                <textarea id="responsibilities" rows="4" placeholder="Describe your responsibilities..."></textarea><br><br>
+            </div>
+            
+            <div class="skills">
+                <h3>Skills</h3>
+                
+                <label for="skills">Skills (comma-separated):</label><br>
+                <input id="skills" type="text" placeholder="Enter your skills"><br><br>
+                
+                <label for="languages">Languages:</label>
+                <input id="languages" type="text" placeholder="Languages known"><br><br>
+                
+                <label for="certifications">Certifications:</label>
+                <input id="certifications" type="text" placeholder="Certifications"><br><br>
+            </div>
+            
+            <div class="rd">
+                <h3>Additional Details</h3>
+                
+                <label for="resume">Upload Resume:</label>
+                <input id="resume" type="file"><br><br>
+                <p id="para">Please fill the all required fields</p>
+                
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

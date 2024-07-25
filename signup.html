@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+    <div class="sign-up">
+        <form onsubmit="return fn()" action="signin.html">
+        <h3 id="su">SIGN-UP</h3>
+        <div class="mail">
+        <label for="username">Username</label><br>
+        <input type="email" id="username" placeholder="Enter your username" required>
+        </div>
+        <div class="pw">
+        <label for="password">Password</label><br>
+        <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <div class="rpw">
+        <label for="repassword" >Re-Password</label><br>
+        <input type="password" id="repassword" placeholder="Re-Enter your password" >
+        </div>
+        <div class="phoneno">
+        <label for="mobile">Mobile Number</label><br>
+        <input type="text" id="mobile" placeholder="Enter your mobile number" >
+        </div>
+        <button type="submit">Register</button>
+        </form>
+    </div>
+    <script src="practice.js"></script>
+</body>
+</html>
